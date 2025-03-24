@@ -3531,13 +3531,17 @@ input::-webkit-date-and-time-value {
     transition: width 0.3s ease;
 }
 
-.modal-popup-width-60 {
-    max-width: 60% !important;
+.modal-popup-width-75 {
+    max-width: 75% !important;
 }
 
-.modal-popup-width-50 {
-    max-width: 50% !important;
+
+@media (min-width: 768px) {
+    .modal-popup-width-50 {
+        max-width: 50% !important;
+    }
 }
+
 
 .modal-popup-width-40 {
     max-width: 40% !important;
@@ -3750,8 +3754,8 @@ input::-webkit-date-and-time-value {
     flex: 0 0 10%;
 }
 
-.popover-icon-color{
-   border-color: var(--color-maroon);
+.popover-icon-color {
+    border-color: var(--color-maroon);
 }
 
 .form-control {
