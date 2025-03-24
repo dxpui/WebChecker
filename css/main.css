@@ -3747,7 +3747,7 @@ input::-webkit-date-and-time-value {
 }
 
 .empty-space {
-    flex: 0 0 25%;
+    flex: 0 0 10%;
 }
 
 .popover-icon-color{
@@ -3770,4 +3770,7 @@ input::-webkit-date-and-time-value {
     border-top: 3px solid #000045;
 }
 
-/**********************/
+/*********result-page*************/
+.empty-space-result-page {
+    flex: 0 0 10% !important;
+}
