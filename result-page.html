@@ -826,8 +826,29 @@
               <!-- Tab Content -->
               <div class="tab-content mt-3" id="myTabContent">
                 <div class="tab-pane fade show active" id="map" role="tabpanel" aria-labelledby="home-tab">
-                  <h3>Map Tab</h3>
-                  <p>Welcome to the Map section!</p>
+                  <div class="row g-3 align-items-center mb-3">
+                    <div class="col-auto">
+                      <label for="network" class="col-form-label"><b>Network :</b></label>
+                    </div>
+                    <div class="col-3 px-0 me-2">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected="">EE</option>
+                        <option value="72579157">Three</option>
+                        <option value="72579158">O2</option>
+                        <option value="72579159">Vodafone</option>
+                      </select>
+                    </div>
+                    <div class="col-7 px-0">
+                      <div class="dropdown-box">
+                        <div class="color-box"></div>
+                        <input type="text" value="Patchy (Outdoor Only)" readonly>
+                        <button class="add-btn">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <img src="assets/img/map.png">
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="profile-tab">
                   <h3>Address Tab</h3>

@@ -3849,3 +3849,44 @@ input::-webkit-date-and-time-value {
 .border-btm-right {
     border-bottom-right-radius: 20px;
 }
+
+/*********map*******/
+.dropdown-box {
+    display: flex;
+    align-items: center;
+    border: 3px solid #000045;
+    width: 100%;
+    background: white;
+    cursor: pointer;
+}
+
+.dropdown-box input:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    background: rgb(7, 180, 215);
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+.dropdown-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.add-btn {
+    color: rgb(21, 3, 3);
+    border: none;
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: white;
+}
