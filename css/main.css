@@ -20,7 +20,7 @@
     /* Page headers 5*/
     --color-maroon: #8F0057;
     /* Page headers 6*/
-    --color-megenta: #C400ED;
+    --color-megenta: #C400ED; 
     /* Page White colour*/
     --color-white: #FFFFFF;
     /* Anchor Text Color */
@@ -3868,7 +3868,7 @@ input::-webkit-date-and-time-value {
 .color-box {
     width: 20px;
     height: 20px;
-    background: rgb(7, 180, 215);
+    /* background: rgb(7, 180, 215); */
     border-radius: 2px;
     margin-right: 8px;
     margin-left: 8px;
@@ -3901,4 +3901,24 @@ input::-webkit-date-and-time-value {
     line-height: 1;
     font-size: 10px;
     color: #333;
+}
+
+.bg-skyBlue{
+    background: rgb(7, 180, 215);
+}
+
+.bg-magenta{
+    background: #8F0057
+}
+
+.bg-green{
+    background: #36C280
+}
+
+.bg-pink{
+    background: #C400ED
+}
+
+.bg-grey{
+    background: #ccc
 }
