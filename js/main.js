@@ -477,7 +477,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('.content-faq').hide(); 
+    $('.content-faq').hide();
     /* Panel Collapse Left-Right*/
     $('.collapse-left').on('click', function () {
         var $leftDrawer = $('.postcode-left-outer');
@@ -505,13 +505,13 @@ $(document).ready(function () {
     });
 
     /* accordion */
-    $('.item-list li').on('click', function() {
+    $('.item-list li').on('click', function () {
         $('.item-list li').removeClass('active');
         $(this).addClass('active');
-        
+
         let contentId = $(this).data('content-id');
         $('.default-msg').hide();
-        $('.content').hide(); 
+        $('.content').hide();
         $('#' + contentId).show();
     });
 
@@ -525,16 +525,16 @@ $(document).ready(function () {
 
     $('#language-notification').modal('show');
 
-    $('#language-notification').on('click', function() {
+    $('#language-notification').on('click', function () {
         $('#language-notification').modal('hide');
     });
 
-    $('#feedback-form-submit').on('click', function() {
+    $('#feedback-form-submit').on('click', function () {
         $('#feedback-form-notification').modal('show');
     });
 
-    $('#postcode').on('click', function() {
-       $('#staticBackdrop').modal('show');
+    $('#postcode').on('click', function () {
+        $('#staticBackdrop').modal('show');
     });
 
     let activePopover = null;
@@ -553,6 +553,35 @@ $(document).ready(function () {
         }
     });
 
+
+    // chart script
+    document.addEventListener("DOMContentLoaded", function () {
+        const charts = document.querySelectorAll(".donut-chart");
+
+        charts.forEach(chart => {
+            let percentage = chart.getAttribute("data-percentage");
+            chart.querySelector(".percent-text").innerText = percentage + "%";
+
+            let totalSegments = 10;
+            let blueSegments = Math.round((percentage / 100) * totalSegments);
+            let anglePerSegment = 36; // Each segment is 36 degrees
+            let gap = 2;
+            let currentAngle = 0;
+
+            let gradientParts = [];
+
+            for (let i = 0; i < totalSegments; i++) {
+                let color = i < blueSegments ? "#000045" : "gray";
+                gradientParts.push(`${color} ${currentAngle}deg ${currentAngle + (anglePerSegment - gap)}deg`);
+                gradientParts.push(`white ${currentAngle + (anglePerSegment - gap)}deg ${currentAngle + anglePerSegment}deg`);
+                currentAngle += anglePerSegment;
+            }
+
+            chart.style.background = `conic-gradient(${gradientParts.join(", ")})`;
+        });
+    });
+
+    // end chart script
 
 });
 

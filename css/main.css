@@ -3778,3 +3778,74 @@ input::-webkit-date-and-time-value {
 .empty-space-result-page {
     flex: 0 0 10% !important;
 }
+
+/* chart css */
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 375px;
+    margin: auto;
+    text-align: center;
+}
+
+.chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 8px solid #d0c9c9cf;
+    padding: 20px;
+}
+
+.chart-icon {
+    width: auto;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.donut-chart {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: conic-gradient(gray 0deg 36deg, white 36deg 38deg);
+}
+
+.donut-chart::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.percent-text {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    z-index: 1;
+}
+
+.border-top-left {
+    border-top-left-radius: 20px;
+}
+
+.border-top-right {
+    border-top-right-radius: 20px;
+}
+
+.border-btm-left {
+    border-bottom-left-radius: 20px;
+}
+
+.border-btm-right {
+    border-bottom-right-radius: 20px;
+}
