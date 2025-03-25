@@ -3890,3 +3890,15 @@ input::-webkit-date-and-time-value {
     transition: 0.3s;
     background-color: white;
 }
+
+.box-container {
+    display: flex;
+    align-items: center; 
+  }
+
+.box-container span {
+    margin-top: 10px;
+    line-height: 1;
+    font-size: 10px;
+    color: #333;
+}
