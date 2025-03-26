@@ -20,7 +20,7 @@
     /* Page headers 5*/
     --color-maroon: #8F0057;
     /* Page headers 6*/
-    --color-megenta: #C400ED; 
+    --color-megenta: #C400ED;
     /* Page White colour*/
     --color-white: #FFFFFF;
     /* Anchor Text Color */
@@ -3872,7 +3872,7 @@ input::-webkit-date-and-time-value {
     border-radius: 2px;
     margin-right: 8px;
     margin-left: 8px;
-  }
+}
 
 .dropdown-box input {
     flex: 1;
@@ -3893,8 +3893,8 @@ input::-webkit-date-and-time-value {
 
 .box-container {
     display: flex;
-    align-items: center; 
-  }
+    align-items: center;
+}
 
 .box-container span {
     margin-top: 10px;
@@ -3903,22 +3903,168 @@ input::-webkit-date-and-time-value {
     color: #333;
 }
 
-.bg-skyBlue{
-    background: rgb(7, 180, 215);
+.bg-skyBlue {
+    background-color: rgb(7, 180, 215) !important;
 }
 
-.bg-magenta{
-    background: #8F0057
+.bg-navyBlue {
+    background-color: var(--color-anchor)
 }
 
-.bg-green{
-    background: #36C280
+.bg-magenta {
+    background-color: #8F0057 !important;
 }
 
-.bg-pink{
-    background: #C400ED
+.bg-green {
+    background-color: #36C280 !important;
 }
 
-.bg-grey{
-    background: #ccc
+.bg-pink {
+    background-color: #C400ED !important;
+}
+
+.bg-grey {
+    background-color: #ccc !important;
+}
+
+/**** WebChecker - Result Page - accordion-address-tab-button ***/
+
+
+.accordion-address-tab-button {
+    width: 100%;
+    outline: none;
+    box-shadow: none !important;
+    border: none !important;
+    justify-content: space-between;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-address-tab-button::after {
+    display: none !important;
+}
+
+.accordion-address-tab-button .icon {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.accordion-address-tab-button.collapsed .icon::before {
+    content: '+';
+}
+
+.accordion-address-tab-button:not(.collapsed) .icon::before {
+    content: '-';
+}
+
+.accordion-body {
+    transition: all 0.3s ease;
+}
+
+.accordion-collapse {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+}
+
+.accordion-collapse {
+    position: static;
+}
+
+/* Remove border from accordion */
+.accordion-item-address-tab {
+    border: none;
+}
+
+/* Ensure fixed width for the third column */
+td:nth-child(3) {
+    width: 33.33% !important;
+    max-width: 33.33% !important;
+    min-width: 33.33% !important;
+}
+
+td:nth-child(1) {
+    width: 10% !important;
+}
+
+td:nth-child(2) {
+    width: 5% !important;
+}
+
+td:nth-child(3) {
+    width: 85% !important;
+}
+
+.table-responsive td {
+    border: 3px solid var(--color-default);
+}
+
+/* Ensure 3-column layout on all devices */
+@media (max-width: 992px) {
+    .table-responsive td {
+        display: table-cell;
+        width: 33.33%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-responsive td {
+        display: table-cell;
+        width: 33.33%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    .accordion-address-tab-button {
+        font-size: 14px;
+    }
+
+    .accordion-body {
+        font-size: 12px;
+    }
+
+    .table-responsive td {
+        display: table-cell;
+        width: 33.33%;
+        text-align: center;
+    }
+}
+
+.chart-icon-address {
+    width: auto;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.table-bordered {
+    border: 3px solid var(--color-default);
+}
+
+.accordion-address-tab-button .icon {
+    margin-left: auto
 }
