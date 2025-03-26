@@ -4077,9 +4077,10 @@ td:nth-child(3) {
     color: var(--color-black);
 }
 
-.nav-link:hover { 
+.nav-link:hover {
     color: var(--color-black);
 }
+
 .nav-link.active {
     color: var(--bs-nav-tabs-link-active-color);
     background-color: var(--color-light-gray);
@@ -4093,3 +4094,75 @@ td:nth-child(3) {
 
 
 
+/* Table 2 Styling */
+.table-postal-district td:nth-child(1) {
+    width: 60% !important;
+}
+
+.table-postal-district td:nth-child(2) {
+    width: 10% !important;
+}
+
+.table-postal-district td:nth-child(3) {
+    width: 10% !important;
+}
+
+.table-postal-district td:nth-child(4) {
+    width: 10% !important;
+}
+
+.table-postal-district td:nth-child(5) {
+    width: 10% !important;
+}
+
+.table-postal-district th {
+    border: none;
+    background-color: #fff;
+    /* Optional: Background color for distinction */
+}
+
+.table-postal-district {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.table-postal-district>:not(caption)>* {
+    border-width: 0px;
+}
+
+/* .table-postal-district-row{
+    border-left: none;
+    border-right: none;
+} */
+
+.table-postal-district-row td {
+    border-left: 0px solid var(--color-default) !important;
+    border-right: 0px solid var(--color-default) !important;
+}
+
+.table-postal-district-row td:nth-child(2) {
+    /* border-left: 3px  solid var(--color-light-gray) !important; */
+    border-right: 3px solid var(--color-light-gray) !important;
+}
+
+.table-postal-district-row td:nth-child(3) {
+    border-left: 3px solid var(--color-light-gray) !important;
+    border-right: 3px solid var(--color-light-gray) !important;
+}
+
+.table-postal-district-row td:nth-child(4) {
+    border-left: 3px solid var(--color-light-gray) !important;
+    border-right: 3px solid var(--color-light-gray) !important;
+}
+
+
+.postal-tab-arrow.collapsed .icon::before {
+    content: '\2303' !important;
+    font-size: 30px;
+}
+
+.postal-tab-arrow:not(.collapsed) .icon::before {
+    content: '\2304' !important;
+    font-size: 30px;
+}
