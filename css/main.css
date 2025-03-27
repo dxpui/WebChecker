@@ -71,7 +71,7 @@ a:has(i) {
 }
 
 a:focus-visible {
-    outline: 1px solid var(--color-outline-focus);
+    outline: 3px solid var(--color-outline-focus);
     outline-offset: 0;
 }
 
@@ -232,7 +232,7 @@ h6,
     border-radius: 0;
     border-color: var(--color-default);
     line-height: 2;
-    border: 1px solid var(--color-default);
+    border: 3px solid var(--color-default);
 }
 
 .form-select {
@@ -246,7 +246,7 @@ h6,
 .form-control:focus,
 .form-select:focus,
 .form-check-input:focus {
-    border: 1px solid var(--color-default);
+    border: 3px solid var(--color-default);
     box-shadow: var(--btn-focus-box-shadow);
 }
 
@@ -3025,7 +3025,7 @@ input::-webkit-date-and-time-value {
 
 .search-container .input-group-text {
     border-right: none;
-    border: 1px solid var(--color-default);
+    border: 3px solid var(--color-default);
     border-radius: 0;
     margin-left: -4px !important;
     background-color: transparent;
