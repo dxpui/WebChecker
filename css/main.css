@@ -3272,6 +3272,10 @@ input::-webkit-date-and-time-value {
     background-color: #ccc !important;
 }
 
+.color-magenta{
+    color: #8F0057 !important;
+}
+
 /**** WebChecker - Result Page - accordion-address-tab-button ***/
 
 
@@ -3534,4 +3538,7 @@ td:nth-child(3) {
     content: '';
     content: '−';
     font-size: 40px;
+}
+.color-default{
+    color: var(--color-default);
 }
