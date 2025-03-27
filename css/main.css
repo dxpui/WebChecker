@@ -3307,6 +3307,7 @@ input::-webkit-date-and-time-value {
 
 .accordion-address-tab-button:not(.collapsed) .icon::before {
     content: '-';
+    font-size: 50px;         
 }
 
 .accordion-body {
