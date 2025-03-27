@@ -583,6 +583,19 @@ $(document).ready(function () {
 
     // end chart script
 
+    // // popover display on mouse over//
+    $('.popover-trigger').popover({
+        trigger: 'manual'
+    });
+
+    $('.popover-trigger').on('mouseenter', function () {
+        $(this).popover('show');
+    });
+
+    $('.popover-trigger').on('mouseleave', function () {
+        $(this).popover('hide');
+    });
+
 });
 
 
