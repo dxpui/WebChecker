@@ -3950,9 +3950,10 @@ input::-webkit-date-and-time-value {
 
 .accordion-address-tab-button .icon {
     font-family: Arial, sans-serif;
-    font-size: 30px;
     font-weight: bold;
     transition: transform 0.3s;
+    font-size: 30px;
+
 }
 
 .accordion-address-tab-button.collapsed .icon::before {
@@ -4096,23 +4097,23 @@ td:nth-child(3) {
 
 /* Table 2 Styling */
 .table-postal-district td:nth-child(1) {
-    width: 60% !important;
+    width: 48% !important;
 }
 
 .table-postal-district td:nth-child(2) {
-    width: 10% !important;
+    width: 13% !important;
 }
 
 .table-postal-district td:nth-child(3) {
-    width: 10% !important;
+    width: 13% !important;
 }
 
 .table-postal-district td:nth-child(4) {
-    width: 10% !important;
+    width: 13% !important;
 }
 
 .table-postal-district td:nth-child(5) {
-    width: 10% !important;
+    width: 13% !important;
 }
 
 .table-postal-district th {
@@ -4158,11 +4159,15 @@ td:nth-child(3) {
 
 
 .postal-tab-arrow.collapsed .icon::before {
-    content: '\2303' !important;
-    font-size: 30px;
+    content: '\2304' !important;
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
 .postal-tab-arrow:not(.collapsed) .icon::before {
-    content: '\2304' !important;
-    font-size: 30px;
+    content: '\2303' !important;
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 30px;
 }
