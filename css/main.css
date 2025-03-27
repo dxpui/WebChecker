@@ -2909,7 +2909,7 @@ input::-webkit-date-and-time-value {
 .accordion-button {
     cursor: pointer;
     position: relative;
-    padding: 3px 40px 3px 10px;
+    padding: 3px 10px 3px 10px;
     background-color: white;
     color: black;
     border: none;
@@ -3520,6 +3520,14 @@ td:nth-child(3) {
     font-size: 40px;
     display: inline-block;
     margin-top: 30px;
+}
+
+.p-1px {
+    padding: 1px !important;
+}
+
+.p-2px {
+    padding: 2px !important;
 }
 
 .p-3px {
