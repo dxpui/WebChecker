@@ -703,31 +703,30 @@
     <section class="postcode-container">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-5 ">
+          <div class="col-md-5">
             <div class="postcode-container-left">
-              <h2 class="text-lg-start mb-4">Mobile Coverage Checker
-              </h2>
-              <div class="mb-3 mt-3 col-8">
-                <label for="postcode" class="m-btm-10px">Search by postcode</label>
-                <div class="search-container">
-                  <input type="text" class="form-control search-postcode" id="postcode" placeholder="Enter postcode" value="CT1 2EH">
-                  <i class="fas fa-search fs-2rem"></i>
+              <h2 class="text-lg-start mb-3">Mobile Coverage Checker </h2>
+              <div class="mb-4 col-xl-8">
+                <label for="postcode" class="mb-1 fs-m">Search by postcode</label>
+                <div class="search-container input-group mb-3">
+                  <input type="text" class="form-control search-postcode" id="postcode" placeholder="Enter postcode" value="CT1 2EH" aria-label="Enter postcode" aria-describedby="Enter-postcode">
+                  <a href="" class="input-group-text" id="Enter-postcode"><i class="fas fa-search fs-2rem"></i> <span class="visually-hidden-focusable">Search</span> </a>
                 </div>
+
               </div>
               <div class="mb-4">
                 <img class="location-pin" src="assets/img/web-icons/location-pin.svg" alt="Location Pin" /></a>
-                <label for="postcode mt-3" class="fw-bold text-decoration-underline">Use current location</label>
+                <a href=""  class="fw-bold current-location-link">Use current location</a>
               </div>
-              <div class="col-md-12 text-center">
-                <img src="assets/img/Your-Mobile-Signal-Graphic.png">
+              <div class="col-md-12 text-center d-none d-md-block">
+                <img src="assets/img/Your-Mobile-Signal-Graphic.png" alt="">
               </div>
             </div>
           </div>
           <div class="col-md-7  gray-bg ">
             <div class="postcode-container-right">
-              <div class="container">
                 <div class="row">
-                  <div class="col-12 px-5rem">
+                  <div class="col-12">
                     <div id="content1_1" class="content gray-bg details-box-padding">
                       <h2 class="mb-3" id="title">Ofcom’s mobile checker</h2>
                       <p>
@@ -759,7 +758,6 @@
 
                   </div>
                 </div>
-              </div>
             </div>
 
           </div>
