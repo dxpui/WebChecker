@@ -3307,7 +3307,7 @@ input::-webkit-date-and-time-value {
 
 .accordion-address-tab-button:not(.collapsed) .icon::before {
     content: '-';
-    font-size: 50px;         
+    font-size: 50px;
 }
 
 .accordion-body {
@@ -3516,4 +3516,22 @@ td:nth-child(3) {
     font-size: 40px;
     display: inline-block;
     margin-top: 30px;
+}
+
+.p-3px {
+    padding: 3px !important;
+}
+
+.accordion-button::after {
+    background-image: none !important;
+    content: '+';
+    font-size: 40px;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '';
+    content: '−';
+    font-size: 40px;
 }
