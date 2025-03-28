@@ -5,7 +5,7 @@
   <!-- Required meta tags  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OFCOM website</title>
+  <title>Web Checker</title>
   <link rel="icon" href="assets/img/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -701,7 +701,7 @@
     </section>
     <section>
       <div class="modal language-notification fade" id="language-notification" tabindex="-1"
-        aria-labelledby="exampleModalLabel1" aria-hidden="true" data-bs-backdrop="static">
+         aria-hidden="true" data-bs-backdrop="static">
         <div class="modal-dialog modal-popup-width-50 modal-dialog-centered">
           <div class="modal-content border-color-default rounded-0">
             <div class="modal-body pb-0">
@@ -726,12 +726,12 @@
         <div class="row">
           <div class="col-md-5 position-relative postcode-left-outer">
             <button type="submit" class="btn btn-primary collapse-left d-none d-md-inline" id="collapseButton"><i
-                class="fa-solid fa-chevron-left"></i></button>
+                class="fa-solid fa-chevron-left"></i><span class="visually-hidden-focusable text-dark">Button</span></button>
             <div class="postcode-container-left">
-              <h2 class="">Mobile coverage checker
-              </h2>
-              <div class="mb-3 mt-1 col-8">
-                <label for="postcode" class="m-btm-10px">Search by postcode</label>
+              <h1 id="skipToContent" class="visually-hidden-focusable">Web Checker</h1>
+              <h2 class="">Mobile coverage checker</h2>
+              <div class="mb-4 col-xl-8">
+                <label for="postcode" class="mb-1 fs-m">Search by postcode</label>
                 <div class="search-container input-group mb-3">
                   <input type="text" class="form-control search-postcode" id="postcode" placeholder="Enter postcode"
                     value="CT1 2EH" aria-label="Enter postcode" aria-describedby="Enter-postcode">
@@ -741,7 +741,7 @@
               </div>
               <div class="mb-4">
                 <img class="location-pin" src="assets/img/web-icons/location-pin.svg" alt="Location Pin" /></a>
-                <a href="" class="current-location-link">Use current location</a>
+                <a href="" class="bold-link">Use current location</a>
               </div>
               <div class="col-md-12 text-center">
                 <h4 class="text-start fw-bold">Mobile network performance</h4>
@@ -790,7 +790,7 @@
                 <a href="more-information.html" class="btn btn-primary d-none d-md-inline"
                   aria-label="More information">More
                   information</a>
-                <a href="" class="fw-bold color-default">Can't find your provider<i
+                <a href="" class="bold-link">Can't find your provider<i
                     class="popover-trigger popover-icon fa-solid fa-circle-info color-magenta" data-bs-toggle="popover"
                     data-bs-placement="right" data-bs-html="true" data-bs-content="
                   <div class='custom-popover'>
@@ -817,9 +817,9 @@
           </div>
           <div class="col-md-7 postcode-right-outer gray-bg ">
             <div class="postcode-container-right">
-              <h2 class="mb-2 mb-md-0">Mobile Coverage
+              <h2 class="mb-2">Mobile Coverage
               </h2>
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <ul class="nav nav-tabs custom-nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#map" type="button"
                     role="tab" aria-controls="home" aria-selected="true"><b>Map</b></button>
@@ -836,14 +836,14 @@
               </ul>
 
               <!-- Tab Content -->
-              <div class="tab-content" id="myTabContent">
+              <div class="tab-content custom-tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="map" role="tabpanel" aria-labelledby="home-tab">
                   <div class="row g-3 align-items-center mb-3">
                     <div class="col-auto">
                       <label for="network" class="col-form-label"><b>Network :</b></label>
                     </div>
                     <div class="col-6 col-md-3 px-0 me-2 pt-2 mt-3 right-mobile">
-                      <select class="form-select pt-0" aria-label="Default select example">
+                      <select class="form-select" aria-label="Default select example">
                         <option selected="">EE</option>
                         <option value="72579157">Three</option>
                         <option value="72579158">O2</option>
@@ -878,76 +878,13 @@
                     </div>
                   </div>
                   <div class="col-12 text-center">
-                    <img src="assets/img/map.png">
+                    <img src="assets/img/map.png" alt="">
                   </div>
 
-                  <div class="row col-12 mt-4">
-                    <div class="col-6 col-md-2 px-0">
-                      <i style="color: #8F0057;" class="popover-trigger popover-icon fa-solid fa-circle-info me-2"
-                        data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" data-bs-content="
-                        <div class='custom-popover'>
-                          <div class='mb-4'>
-                            <h3 class='mb-3 mt-2'>I can't find my service provider for the checker</h3>
-                            <p>The coverage checker the four main mobile network operators in the UK. All other mobile operators
-                              in the UK. All other mobile operators in UK provide their service over these networks
-                            </p>
-                     
-                            <p><b>Vodafone network -</b> Labara Mobile, Asda Mobile, Talk Mobile and VOXI.</p>
-                     
-                            <p><b>EE network -</b> Your Co-op, 1p Mobile, Utility Warehouse, Ecotalk, Plusnet, BT Mobile and Lyca mobile</p>
-                     
-                            <p><b>Three network -</b> iD Mobile, Smarty, Freedompop and Superdrug Mobile.</p>
-                     
-                            <p><b>O2 network -</b> Tesco Mobile, Giffgaff and Sky Mobile.</p>
-                          </div>
-                        </div>">
-                      </i>Key -
-                    </div>
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-magenta"></div>
-                        <span>Good in-home and outdoor</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-green"></div>
-                        <span>Patchy in-home, good outdoor</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-skyBlue"></div>
-                        <span>Good<br /> (outdoor only)</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-pink"></div>
-                        <span>Patchy<br /> (outdoor only)</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-grey"></div>
-                        <span>None</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-flex justify-content-end mt-5">
-                    <a href="feedback-form.html" class="btn btn-primary me-3 me-md-0"
-                      aria-label="More information">Provide Coverage
-                      Feedback</a>
-                    <a href="more-information.html" class="btn btn-primary d-md-none" aria-label="More information">More
-                      information</a>
-                  </div>
-
+                 
                 </div>
+               
+
                 <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="container bg-white pt-3" id="accordionContainer">
                     <h4>Results for Flat 1, Starrs House, 14D, The Precints</h4>
@@ -1044,17 +981,17 @@
                             <td> <img src="assets/img/Vodafone_Logo.png" alt="Icon 4" class="chart-icon-address">
                             <td class="bg-skyBlue"></td>
                             <td>
-                              <div class="accordion" id="accordion3">
+                              <div class="accordion" id="accordion4">
                                 <div class="accordion-item-address-tab">
-                                  <h2 class="accordion-header" id="heading3">
+                                  <h2 class="accordion-header" id="heading4">
                                     <button class="accordion-address-tab-button collapsed" type="button"
-                                      data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
-                                      aria-controls="collapse3">
+                                      data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                      aria-controls="collapse4">
                                       Patchy (outdoor only)
                                       <span class="icon"></span>
                                     </button>
                                   </h2>
-                                  <div id="collapse3" class="accordion-collapse collapse"
+                                  <div id="collapse4" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionContainer">
                                     <div class="accordion-body">
                                       This is expanded content for Row 3. You can add more details here.
@@ -1071,70 +1008,7 @@
                       exercitationem
                       necessitatibus atque magnam nemo, dolor assumenda rerum corporis saepe totam eaque.</p>
                   </div>
-                  <div class="row col-12 mt-4">
-                    <div class="col-6 col-md-2 px-0">
-                      <i style="color: #8F0057;" class="popover-trigger popover-icon fa-solid fa-circle-info me-2"
-                        data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" data-bs-content="
-                        <div class='custom-popover'>
-                          <div class='mb-4'>
-                            <h3 class='mb-3 mt-2'>I can't find my service provider for the checker</h3>
-                            <p>The coverage checker the four main mobile network operators in the UK. All other mobile operators
-                              in the UK. All other mobile operators in UK provide their service over these networks
-                            </p>
-                     
-                            <p><b>Vodafone network -</b> Labara Mobile, Asda Mobile, Talk Mobile and VOXI.</p>
-                     
-                            <p><b>EE network -</b> Your Co-op, 1p Mobile, Utility Warehouse, Ecotalk, Plusnet, BT Mobile and Lyca mobile</p>
-                     
-                            <p><b>Three network -</b> iD Mobile, Smarty, Freedompop and Superdrug Mobile.</p>
-                     
-                            <p><b>O2 network -</b> Tesco Mobile, Giffgaff and Sky Mobile.</p>
-                          </div>
-                        </div>">
-                      </i>Key -
-                    </div>
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-magenta"></div>
-                        <span>Good in-home and outdoor</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-green"></div>
-                        <span>Patchy in-home, good outdoor</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-skyBlue"></div>
-                        <span>Good<br /> (outdoor only)</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-pink"></div>
-                        <span>Patchy<br /> (outdoor only)</span>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 px-0">
-                      <div class="box-container">
-                        <div class="color-box bg-grey"></div>
-                        <span>None</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-end mt-5">
-                    <a href="feedback-form.html" class="btn btn-primary me-3 me-md-0"
-                      aria-label="More information">Provide Coverage
-                      Feedback</a>
-                    <a href="more-information.html" class="btn btn-primary d-md-none" aria-label="More information">More
-                      information</a>
-                  </div>
+                 
                 </div>
                 <div class="tab-pane fade" id="postal-district" role="tabpanel" aria-labelledby="contact-tab">
                   <div class="container bg-white pt-3" id="accordionContainer-postal">
@@ -1147,7 +1021,7 @@
                         <tbody>
                           <!-- Row 1 -->
                           <tr>
-                            <th></th>
+                            <th><span class="visually-hidden">Header</span></th>
                             <th><img src="assets/img/EE-Logo-2012.png" alt="Icon 1" class="chart-icon-address"></th>
                             <th> <img src="assets/img/Three-UK-logo.png" alt="Icon 2" class="chart-icon-address"></th>
                             <th><img src="assets/img/O2-Logo.png" alt="Icon 3" class="chart-icon-address"></th>
@@ -1238,13 +1112,71 @@
                       exercitationem
                       necessitatibus atque magnam nemo, dolor assumenda rerum corporis saepe totam eaque.</p>
                   </div>
-                  <div class="d-flex justify-content-end mt-5">
-                    <a href="feedback-form.html" class="btn btn-primary me-3 me-md-0"
-                      aria-label="More information">Provide Coverage
-                      Feedback</a>
-                    <a href="more-information.html" class="btn btn-primary d-md-none" aria-label="More information">More
-                      information</a>
+                  
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12 col-md-2 mb-2">
+                    <i style="color: #8F0057;" class="popover-trigger popover-icon fa-solid fa-circle-info me-2"
+                      data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" data-bs-content="
+                      <div class='custom-popover'>
+                        <div class='mb-4'>
+                          <h3 class='mb-3 mt-2'>I can't find my service provider for the checker</h3>
+                          <p>The coverage checker the four main mobile network operators in the UK. All other mobile operators
+                            in the UK. All other mobile operators in UK provide their service over these networks
+                          </p>
+                   
+                          <p><b>Vodafone network -</b> Labara Mobile, Asda Mobile, Talk Mobile and VOXI.</p>
+                   
+                          <p><b>EE network -</b> Your Co-op, 1p Mobile, Utility Warehouse, Ecotalk, Plusnet, BT Mobile and Lyca mobile</p>
+                   
+                          <p><b>Three network -</b> iD Mobile, Smarty, Freedompop and Superdrug Mobile.</p>
+                   
+                          <p><b>O2 network -</b> Tesco Mobile, Giffgaff and Sky Mobile.</p>
+                        </div>
+                      </div>">
+                    </i>Key -
                   </div>
+                  <div class="col-6 col-md-2 mb-2">
+                    <div class="box-container">
+                      <div class="color-box bg-magenta"></div>
+                      <span>Good in-home and outdoor</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-2 mb-2">
+                    <div class="box-container">
+                      <div class="color-box bg-green"></div>
+                      <span>Patchy in-home, good outdoor</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-2 mb-2">
+                    <div class="box-container">
+                      <div class="color-box bg-skyBlue"></div>
+                      <span>Good<br /> (outdoor only)</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-2 mb-2">
+                    <div class="box-container">
+                      <div class="color-box bg-pink"></div>
+                      <span>Patchy<br /> (outdoor only)</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-2 mb-2">
+                    <div class="box-container">
+                      <div class="color-box bg-grey"></div>
+                      <span>None</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 text-end">
+                  <a href="feedback-form.html" class="btn btn-primary me-3 me-md-0 width-md-100"
+                    aria-label="More information">Provide Coverage
+                    Feedback map</a>
+                  <a href="more-information.html" class="btn btn-primary d-md-none width-md-100 mt-2" aria-label="More information">More
+                    information</a>
                 </div>
               </div>
             </div>
