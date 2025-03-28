@@ -2976,6 +2976,7 @@ input::-webkit-date-and-time-value {
 .item-list li {
     list-style: none;
     padding: 5px 10px;
+    margin-bottom: 5px;
     cursor: pointer;
 }
 
@@ -3000,7 +3001,6 @@ input::-webkit-date-and-time-value {
 .item-list li.active {
     background-color: var(--color-light-gray);
     color: var(--color-black);
-    margin-bottom: 5px;
 }
 
 .w-60 {
@@ -3302,6 +3302,7 @@ input::-webkit-date-and-time-value {
     display: flex;
     align-items: center;
     background-color: transparent;
+    text-align: left;
 }
 
 .accordion-address-tab-button::after {
@@ -3311,6 +3312,7 @@ input::-webkit-date-and-time-value {
 .accordion-address-tab-button .icon {
     font-size: 18px;
     transition: transform 0.3s;
+    padding-inline: 10px;
 }
 
 .accordion-address-tab-button.collapsed .icon::before {
@@ -3323,17 +3325,17 @@ input::-webkit-date-and-time-value {
     font-family: FontAwesome;
 }
 
-.accordion-body {
+/* .accordion-body {
     transition: all 0.3s ease;
     margin-top: -15px;
     text-align: start;
     padding-left: 7px;
-}
+} */
 
-.accordion-collapse {
+/* .accordion-collapse {
     width: 100%;
     box-sizing: border-box;
-}
+} */
 
 table {
     width: 100%;
@@ -3345,14 +3347,14 @@ td {
     padding: 15px;
 }
 
-.accordion-collapse {
+/* .accordion-collapse {
     position: static;
-}
+} */
 
 /* Remove border from accordion */
-.accordion-item-address-tab {
+/* .accordion-item-address-tab {
     border: none;
-}
+} */
 
 /* Ensure fixed width for the third column */
 td:nth-child(3) {
@@ -3404,12 +3406,12 @@ td:nth-child(3) {
     }
 
     .accordion-address-tab-button {
-        font-size: 14px;
-    }
-
-    .accordion-body {
         font-size: 12px;
     }
+
+    /* .accordion-body {
+        font-size: 12px;
+    } */
 
     .table-responsive td {
         display: table-cell;
@@ -3420,7 +3422,7 @@ td:nth-child(3) {
 
 .chart-icon-address {
     width: auto;
-    height: 40px;
+    height: 36px;
 }
 
 .table-bordered {
@@ -3528,17 +3530,23 @@ td:nth-child(3) {
     border-right: 3px solid var(--color-light-gray) !important;
 }
 
+.table-postal-district-row  .accordion-body,
+.accordion-item-address-tab .accordion-body{
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 10px;
+}
 
 .postal-tab-arrow.collapsed .icon::before {
     font-family: FontAwesome;
     content: '\f077';
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .postal-tab-arrow:not(.collapsed) .icon::before {
     font-family: FontAwesome;
     content: '\f078';
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .p-1px {
@@ -3609,4 +3617,10 @@ td:nth-child(3) {
 .width-md-100{
     width: 100%;
 }
+}
+
+.post-d-img{
+    height: auto;
+    width: 30px;
+    margin-right: 10px;
 }
