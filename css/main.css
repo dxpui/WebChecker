@@ -3552,6 +3552,11 @@ td:nth-child(3) {
     color: var(--color-default);
 }
 
+#feedback-form-btn {
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width: 767.98px) {
     .pr-mobile-2rm {
         padding-right: 2rem;
@@ -3567,6 +3572,16 @@ td:nth-child(3) {
     }
 
     .right-mobile {
-        margin-left: auto; /* Pushes the div to the right */
-      }
+        margin-left: auto;
+    }
+
+    #feedback-form-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #feedback-form-btn a {
+        width: 100%;
+        text-align: center;
+    }
 }
