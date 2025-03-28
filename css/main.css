@@ -3272,7 +3272,7 @@ input::-webkit-date-and-time-value {
     background-color: #ccc !important;
 }
 
-.color-magenta{
+.color-magenta {
     color: #8F0057 !important;
 }
 
@@ -3547,6 +3547,26 @@ td:nth-child(3) {
     content: '−';
     font-size: 40px;
 }
-.color-default{
+
+.color-default {
     color: var(--color-default);
+}
+
+@media (max-width: 767.98px) {
+    .pr-mobile-2rm {
+        padding-right: 2rem;
+    }
+
+    .pl-mobile-0 {
+        padding-left: 0;
+    }
+
+    .full-width-mobile {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .right-mobile {
+        margin-left: auto; /* Pushes the div to the right */
+      }
 }
