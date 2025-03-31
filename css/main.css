@@ -3610,9 +3610,9 @@ td:nth-child(3) {
         margin-left: 0;
     }
 
-    .right-mobile {
+    /* .right-mobile {
         margin-left: auto;
-    }
+    } */
 
     #feedback-form-btn {
         flex-direction: column;
