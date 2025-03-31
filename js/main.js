@@ -554,34 +554,6 @@ $(document).ready(function () {
     });
 
 
-    // chart script
-    document.addEventListener("DOMContentLoaded", function () {
-        const charts = document.querySelectorAll(".donut-chart");
-
-        charts.forEach(chart => {
-            let percentage = chart.getAttribute("data-percentage");
-            chart.querySelector(".percent-text").innerText = percentage + "%";
-
-            let totalSegments = 10;
-            let blueSegments = Math.round((percentage / 100) * totalSegments);
-            let anglePerSegment = 36; // Each segment is 36 degrees
-            let gap = 2;
-            let currentAngle = 0;
-
-            let gradientParts = [];
-
-            for (let i = 0; i < totalSegments; i++) {
-                let color = i < blueSegments ? "#000045" : "gray";
-                gradientParts.push(`${color} ${currentAngle}deg ${currentAngle + (anglePerSegment - gap)}deg`);
-                gradientParts.push(`white ${currentAngle + (anglePerSegment - gap)}deg ${currentAngle + anglePerSegment}deg`);
-                currentAngle += anglePerSegment;
-            }
-
-            chart.style.background = `conic-gradient(${gradientParts.join(", ")})`;
-        });
-    });
-
-    // end chart script
 
     // // popover display on mouse over//
     $('.popover-trigger').popover({
@@ -599,3 +571,31 @@ $(document).ready(function () {
 });
 
 
+// chart script
+document.addEventListener("DOMContentLoaded", function () {
+    const charts = document.querySelectorAll(".donut-chart");
+
+    charts.forEach(chart => {
+        let percentage = chart.getAttribute("data-percentage");
+        chart.querySelector(".percent-text").innerText = percentage + "%";
+
+        let totalSegments = 10;
+        let blueSegments = Math.round((percentage / 100) * totalSegments);
+        let anglePerSegment = 36; // Each segment is 36 degrees
+        let gap = 2;
+        let currentAngle = 0;
+
+        let gradientParts = [];
+
+        for (let i = 0; i < totalSegments; i++) {
+            let color = i < blueSegments ? "#000045" : "gray";
+            gradientParts.push(`${color} ${currentAngle}deg ${currentAngle + (anglePerSegment - gap)}deg`);
+            gradientParts.push(`white ${currentAngle + (anglePerSegment - gap)}deg ${currentAngle + anglePerSegment}deg`);
+            currentAngle += anglePerSegment;
+        }
+
+        chart.style.background = `conic-gradient(${gradientParts.join(", ")})`;
+    });
+});
+
+// end chart script
