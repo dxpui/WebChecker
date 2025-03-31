@@ -3111,6 +3111,13 @@ input::-webkit-date-and-time-value {
     align-items: center;
 }
 
+@media (max-width: 1300px) {
+    .btn-container {
+        display: grid;
+        grid-row-gap: 30px;
+    }
+}
+
 .btn-container button {
     flex: 0 0 40%;
 }
@@ -3584,10 +3591,10 @@ td:nth-child(3) {
     color: var(--color-default);
 }
 
-#feedback-form-btn {
+/* #feedback-form-btn {
     display: flex;
     flex-direction: row;
-}
+} */
 
 @media (max-width: 767.98px) {
     .pr-mobile-2rm {
