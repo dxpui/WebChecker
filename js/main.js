@@ -533,7 +533,7 @@ $(document).ready(function () {
         $('#feedback-form-notification').modal('show');
     });
 
-    $('#postcode').on('click', function () {
+    $('#Enter-postcode').on('click', function () {
         $('#staticBackdrop').modal('show');
     });
 

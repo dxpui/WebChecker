@@ -2857,9 +2857,10 @@ input::-webkit-date-and-time-value {
     color: var(--color-default) !important;
 }
 
-.postcode-left-outer{
+.postcode-left-outer {
     transition: width 0.3s ease;
 }
+
 .postcode-left-outer.collapsed {
     width: 50px;
     transition: width 0.3s ease;
@@ -2908,6 +2909,7 @@ input::-webkit-date-and-time-value {
     background-color: white;
     padding: 0;
     margin-bottom: 0;
+    border-radius: 0 !important;
 }
 
 .accordion-container {
@@ -2935,12 +2937,12 @@ input::-webkit-date-and-time-value {
     font-size: 1.5rem;
 }
 
-.accordion-item {
+/* .accordion-item {
     margin: 2px;
     background-color: white;
     border: none;
     padding: 5px;
-}
+} */
 
 .accordion-item:first-of-type .accordion-button {
     border-top-left-radius: none !important;
@@ -2981,10 +2983,11 @@ input::-webkit-date-and-time-value {
 }
 
 .accordion-item {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 0px !important;
     overflow: hidden;
+    padding: 7px 5px;
 }
 
 .accordion-item:not(:first-child) {
@@ -3437,7 +3440,7 @@ td:nth-child(3) {
     border: none;
 }
 
-.custom-tab-content .tab-pane{
+.custom-tab-content .tab-pane {
     background-color: var(--color-white);
     padding: 10px;
 }
@@ -3459,11 +3462,13 @@ td:nth-child(3) {
     border-color: var(--bs-nav-tabs-link-active-border-color);
     border-bottom: 5px solid var(--color-primary);
 }
+
 @media (max-width: 768px) {
     .custom-nav-tabs .nav-link {
         padding: 5px 20px;
     }
 }
+
 .row.col-12.mt-5 {
     margin-left: 5px;
 }
@@ -3530,8 +3535,8 @@ td:nth-child(3) {
     border-right: 3px solid var(--color-light-gray) !important;
 }
 
-.table-postal-district-row  .accordion-body,
-.accordion-item-address-tab .accordion-body{
+.table-postal-district-row .accordion-body,
+.accordion-item-address-tab .accordion-body {
     text-align: left;
     padding-top: 0px;
     padding-left: 10px;
@@ -3614,12 +3619,12 @@ td:nth-child(3) {
 }
 
 @media (max-width: 768px) {
-.width-md-100{
-    width: 100%;
-}
+    .width-md-100 {
+        width: 100%;
+    }
 }
 
-.post-d-img{
+.post-d-img {
     height: auto;
     width: 30px;
     margin-right: 10px;
