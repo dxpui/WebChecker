@@ -17,6 +17,7 @@
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/mobile-checker.css" rel="stylesheet">
 </head>
 
 <body>
@@ -730,7 +731,7 @@
                 class="visually-hidden-focusable text-dark">Button</span></button>
             <div class="postcode-container-left">
               <h1 id="skipToContent" class="visually-hidden-focusable">Web Checker</h1>
-              <h2 class="">Mobile coverage checker</h2>
+              <h2 class="mb-2 mb-lg-0">Mobile coverage checker</h2>
               <div class="mb-4 col-xl-8">
                 <label for="postcode" class="mb-1 fs-m">Search by postcode</label>
                 <div class="search-container input-group mb-3">
@@ -788,25 +789,28 @@
                 <a href="more-information.html" class="btn btn-primary d-none d-md-inline"
                   aria-label="More information">More
                   information</a>
-                <a href="" class="bold-link">Can't find your provider<i
-                    class="popover-trigger popover-icon fa-solid fa-circle-info color-magenta" data-bs-toggle="popover"
+                <a href="javascript:void(0);" class="bold-link">Can't find your provider
+                  <i class="popover-trigger popover-icon fa-solid fa-circle-info color-magenta" data-bs-toggle="popover"
                     data-bs-placement="right" data-bs-html="true" data-bs-content="
-                  <div class='custom-popover'>
-                    <div class='mb-4'>
-                      <h3 class='mb-3 mt-2'>I can't find my service provider for the checker</h3>
-                      <p>The coverage checker the four main mobile network operators in the UK. All other mobile operators
-                        in the UK. All other mobile operators in UK provide their service over these networks
-                      </p>
-               
-                      <p><b>Vodafone network -</b> Labara Mobile, Asda Mobile, Talk Mobile and VOXI.</p>
-               
-                      <p><b>EE network -</b> Your Co-op, 1p Mobile, Utility Warehouse, Ecotalk, Plusnet, BT Mobile and Lyca mobile</p>
-               
-                      <p><b>Three network -</b> iD Mobile, Smarty, Freedompop and Superdrug Mobile.</p>
-               
-                      <p><b>O2 network -</b> Tesco Mobile, Giffgaff and Sky Mobile.</p>
-                    </div>
-                  </div>">
+                        <div class='custom-popover'>
+                          <div class='mb-4'>
+                            <h3 class='mb-3 mt-2'>I can't find my service provider for the checker</h3>
+                            <p>The coverage checker includes the four main mobile network operators in the UK. 
+                            All other mobile operators in the UK provide their service over these networks.</p>
+                  
+                            <p><b>Vodafone network -</b> Labara Mobile, Asda Mobile, Talk Mobile, and VOXI.</p>
+                  
+                            <p><b>EE network -</b> Your Co-op, 1p Mobile, Utility Warehouse, Ecotalk, Plusnet, BT Mobile, and Lyca Mobile.</p>
+                  
+                            <p><b>Three network -</b> iD Mobile, Smarty, Freedompop, and Superdrug Mobile.</p>
+                  
+                            <p><b>O2 network -</b> Tesco Mobile, Giffgaff, and Sky Mobile.</p>
+                  
+                            <p class='text-center d-md-none mt-2 '>
+                              <a href='javascript:void(0);' class='btn btn-primary btn-md' style='border-radius: 0;'>OK</a>
+                            </p>
+                          </div>
+                        </div>">
                   </i>
                 </a>
               </div>
@@ -875,11 +879,80 @@
                       </div> -->
                     </div>
                   </div>
-                  <div class="col-12 text-center">
-                    <iframe frameborder="0" scrolling="no" width="100%" height="575px"
-                    src="assets/img/map.png" name="imgbox">
-                      <!-- <img src="" alt="" style="min-height: 575px; width: auto;"> -->
+                  <div class="col-12 iframe-wrapper">
+                    <iframe frameborder="0" scrolling="no" width="100%" src="assets/img/map.png"
+                      name="imgbox">
+
                     </iframe>
+                    <div class="row iframe-overlay">
+                      <div class="col-12 col-xxl-2 mb-2">
+                        <i style="color: #8F0057;"
+                          class="popover-trigger okok popover-icon fa-solid fa-circle-info me-2"
+                          data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" data-bs-content="
+                          <div class='custom-popover col-12'>
+                            <div class='mb-4'>
+                              <h3 class='mb-3 mt-2'>I can't find my service provider for the checker</h3>
+                              <p>The coverage checker the four main mobile network operators in the UK. All other mobile operators
+                                in the UK. All other mobile operators in UK provide their service over these networks
+                              </p>
+                       
+                              <p><b>Vodafone network -</b> Labara Mobile, Asda Mobile, Talk Mobile and VOXI.</p>
+                       
+                              <p><b>EE network -</b> Your Co-op, 1p Mobile, Utility Warehouse, Ecotalk, Plusnet, BT Mobile and Lyca mobile</p>
+                       
+                              <p><b>Three network -</b> iD Mobile, Smarty, Freedompop and Superdrug Mobile.</p>
+                       
+                              <p><b>O2 network -</b> Tesco Mobile, Giffgaff and Sky Mobile.</p>
+                              <p class='text-center d-md-none mt-2 '>
+                                <a href='javascript:void(0);' class='btn btn-primary btn-md' style='border-radius: 0;'>OK</a>
+                              </p>
+                            </div>
+                          </div>">
+                        </i>Key -
+                      </div>
+                      <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                        <div class="box-container">
+                          <div class="color-box bg-magenta"></div>
+                          <span>Good in-home and outdoor</span>
+                        </div>
+                      </div>
+  
+                      <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                        <div class="box-container">
+                          <div class="color-box bg-green"></div>
+                          <span>Patchy in-home, good outdoor</span>
+                        </div>
+                      </div>
+  
+                      <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                        <div class="box-container">
+                          <div class="color-box bg-skyBlue"></div>
+                          <span>Good<br /> (outdoor only)</span>
+                        </div>
+                      </div>
+  
+                      <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                        <div class="box-container">
+                          <div class="color-box bg-pink"></div>
+                          <span>Patchy<br /> (outdoor only)</span>
+                        </div>
+                      </div>
+  
+                      <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                        <div class="box-container">
+                          <div class="color-box bg-grey"></div>
+                          <span>None</span>
+                        </div>
+                      </div>
+  
+  
+                      <div class="col-12 d-flex justify-content-end">
+                        <a href="feedback-form.html" class="btn btn-primary mt-2"
+                          aria-label="More information">Provide Coverage
+                          Feedback map</a>
+                      </div>
+                    </div>
+
                   </div>
 
 
@@ -1009,7 +1082,74 @@
                       exercitationem
                       necessitatibus atque magnam nemo, dolor assumenda rerum corporis saepe totam eaque.</p>
                   </div>
+                  <div class="row">
+                    <div class="col-12 col-xxl-2 mb-2">
+                      <i style="color: #8F0057;"
+                        class="popover-trigger okok popover-icon fa-solid fa-circle-info me-2"
+                        data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" data-bs-content="
+                        <div class='custom-popover col-12'>
+                          <div class='mb-4'>
+                            <h3 class='mb-3 mt-2'>I can't find my service provider for the checker</h3>
+                            <p>The coverage checker the four main mobile network operators in the UK. All other mobile operators
+                              in the UK. All other mobile operators in UK provide their service over these networks
+                            </p>
+                     
+                            <p><b>Vodafone network -</b> Labara Mobile, Asda Mobile, Talk Mobile and VOXI.</p>
+                     
+                            <p><b>EE network -</b> Your Co-op, 1p Mobile, Utility Warehouse, Ecotalk, Plusnet, BT Mobile and Lyca mobile</p>
+                     
+                            <p><b>Three network -</b> iD Mobile, Smarty, Freedompop and Superdrug Mobile.</p>
+                     
+                            <p><b>O2 network -</b> Tesco Mobile, Giffgaff and Sky Mobile.</p>
+                            <p class='text-center d-md-none mt-2 '>
+                              <a href='javascript:void(0);' class='btn btn-primary btn-md' style='border-radius: 0;'>OK</a>
+                            </p>
+                          </div>
+                        </div>">
+                      </i>Key -
+                    </div>
+                    <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                      <div class="box-container">
+                        <div class="color-box bg-magenta"></div>
+                        <span>Good in-home and outdoor</span>
+                      </div>
+                    </div>
 
+                    <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                      <div class="box-container">
+                        <div class="color-box bg-green"></div>
+                        <span>Patchy in-home, good outdoor</span>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                      <div class="box-container">
+                        <div class="color-box bg-skyBlue"></div>
+                        <span>Good<br /> (outdoor only)</span>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                      <div class="box-container">
+                        <div class="color-box bg-pink"></div>
+                        <span>Patchy<br /> (outdoor only)</span>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-xxl-2 mb-2">
+                      <div class="box-container">
+                        <div class="color-box bg-grey"></div>
+                        <span>None</span>
+                      </div>
+                    </div>
+
+
+                    <div class="col-12 d-flex justify-content-end">
+                      <a href="feedback-form.html" class="btn btn-primary mt-2"
+                        aria-label="More information">Provide Coverage
+                        Feedback map</a>
+                    </div>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="postal-district" role="tabpanel" aria-labelledby="contact-tab">
                   <div class="container bg-white pt-3" id="accordionContainer-postal">
@@ -1119,9 +1259,9 @@
                   </div>
 
                 </div>
-                <div class="row mt-4">
+                <!-- <div class="row mt-4">
                   <div class="col-12 col-xxl-2 mb-2">
-                    <i style="color: #8F0057;" class="popover-trigger popover-icon fa-solid fa-circle-info me-2"
+                    <i style="color: #8F0057;" class="popover-trigger okok popover-icon fa-solid fa-circle-info me-2"
                       data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" data-bs-content="
                       <div class='custom-popover col-12'>
                         <div class='mb-4'>
@@ -1175,11 +1315,9 @@
                       <span>None</span>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="mt-5 text-end">
-                  <a href="feedback-form.html" class="btn btn-primary me-3 me-md-0 width-md-100"
-                    aria-label="More information">Provide Coverage
-                    Feedback map</a>
+
                   <a href="more-information.html" class="btn btn-primary d-md-none width-md-100 mt-2"
                     aria-label="More information">More
                     information</a>
@@ -1193,7 +1331,7 @@
 
 
     <section>
-      <div class="row g-0">
+      <div class="row g-0 mtop-5">
         <div class="col-12 d-flex justify-content-center position-relative">
           <button class="btn btn-primary button-subscribe">
             Subscribe to our mailing list <i class="ms-4 fa-solid fa-arrow-right"></i>

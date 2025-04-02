@@ -17,6 +17,7 @@
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/mobile-checker.css" rel="stylesheet">
 </head>
 
 <body>
@@ -746,7 +747,7 @@
                     <div class="btn-container mt-5" id="feedback-form-btn">
                       <a href="more-information.html" class="btn btn-primary" aria-label="More information">More
                         information </a>
-                      <a href="" class="fw-bold color-default">Can't find your provider<i data-bs-toggle="popover"
+                      <a href="javascript:void(0);" class="fw-bold color-default">Can't find your provider<i data-bs-toggle="popover"
                           data-bs-placement="right" data-bs-html="true" data-bs-content="
                         <div class='custom-popover'>
                           <div class='mb-4'>
@@ -762,6 +763,9 @@
                             <p><b>Three network -</b> iD Mobile, Smarty, Freedompop and Superdrug Mobile.</p>
                      
                             <p><b>O2 network -</b> Tesco Mobile, Giffgaff and Sky Mobile.</p>
+                            <p class='text-center d-md-none mt-2 '>
+                              <a href='javascript:void(0);' class='btn btn-primary btn-md' style='border-radius: 0;'>OK</a>
+                            </p>
                           </div>
                         </div>" class="color-magenta popover-trigger popover-icon fa-solid fa-circle-info">
                         </i>
